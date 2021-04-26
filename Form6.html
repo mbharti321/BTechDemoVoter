@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Voter Registration</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/voter.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img style="width:70%;" src="assets/logo.png" alt="NVSP"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li></li>
+                    <li class="active"><a href="#"><h3>National Voter's Servives Demo Portal</h3></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><button class="btn" style="margin-top: 30%;"><span
+                                class="glyphicon glyphicon-hand-up"></span> Vote</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center " style="padding: 1%;">
+        <h1>Form 6</h1>
+        <p>[See rules 13(1) and 26]</p>
+    </div>
+
+    <div class="container-fluid">
+        <div class="main-section bg-info">
+            <form>
+
+                <div class="container">
+                    <h4>Electoral Regitration Officier,</h4>
+                    <div class="row form-inline" style="margin: 2%;">
+                        <div class="col-md-4 ">
+                            <label for="State">Select State:</label>
+                            <select class="form-control" id="state">
+                                <option selected>Select</option>
+                                <option>Karnatka</option>
+                                <option>Bihar</option>
+                                <option>Kerla</option>
+                                <option>Maharastra</option>
+                            </select>
+                        </div>
+                        <div class="col-md-8 ">
+                            <label for="district">Select District:</label>
+                            <select class="form-control" id="district">
+                                <option selected>Select</option>
+                                <option>Bangalore</option>
+                                <option>Udupi</option>
+                                <option>Kolar</option>
+                                <option>Mangalore</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row form-inline" style="margin: 2%; margin-top : 2%;">
+                        <div class="col-md-12">
+                            <label for="Constituency">Legislative Assembly/ Parliyamentry Constituency:</label>
+                            <select class="form-control" id="Constituency">
+                                <option selected>Select</option>
+                                <option>Anekal</option>
+                                <option>Madiwala</option>
+                                <option>Kolar</option>
+                                <option>Kormangla</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="container">
+                    <h4>I request that my name be included in electoral rolls for all thw aforesaid areas.</h4>
+                    <div class="row form-inline" style="margin: 2%;">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioRequest" id="firstTime" checked>
+                            <label class="form-check-label" for="firstTime">
+                                First time voter
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioRequest" id="transfer">
+                            <label class="form-check-label" for="transfer">
+                                Due to transfer from other meeting areas
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row form-inline " style="margin: 2%;">
+                        <label for="mobile">Disability(If any)</label>
+                        <br>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">Visual imapairment
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">Speech and hearing imapairment
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">Motion disabiling
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">Other
+                            <input type="text" class="form-control" id="otherDisability" placeholder="">
+                        </label>
+                    </div>
+                    <div>
+                        <div class="col-md-3 ">
+                            <label for="email">Email ID (Optional):</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter valid email-id">
+                        </div>
+
+                        <div class="col-md-3 ">
+                            <label for="mobile">Mobile Number (Optional): +91</label>
+                            <input type="text" class="form-control" id="mobile" placeholder="Enter valid mobile number">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="container">
+                    <h4 style="margin-top: 2%;">Documents</h4>
+                    <div class="" style="margin: 2%;">
+                        <div class="form-group">
+                            <label for="photo">Your photo*</label>
+                            <input type="file" class="form-control-file" id="photo">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 ">
+                                <label for="ageProof">Age proof*</label>
+                                <input type="file" class="form-control-file" id="ageProof">
+                            </div>
+                            <div class="col-md-7 form-inline ">
+                                <label for="docType1">Document type* </label>
+                                <select class="form-control" id="docType1">
+                                    <option selected>Select</option>
+                                    <option>Aadhar</option>
+                                    <option>Ration Card</option>
+                                    <option>Electricity bill</option>
+                                    <option>10th board admit card</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row" style="margin-top: 2%;">
+                            <div class="col-md-4 ">
+                                <label for="addProof">Adress proof*</label>
+                                <input type="file" class="form-control-file" id="addProof">
+                            </div>
+                            <div class="col-md-7 form-inline ">
+                                <label for="docType1">Document type* </label>
+                                <select class="form-control" id="docType1">
+                                    <option selected>Select</option>
+                                    <option>Aadhar</option>
+                                    <option>Ration Card</option>
+                                    <option>Electricity bill</option>
+                                    <option>10th board admit card</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                </div>
+
+
+
+            </form>
+        </div>
+
+    </div>
+
+    <footer class="container-fluid text-center">
+        <p>Copyrights @ 2021 <b><a href="https://btechcareer.com/">btechcareer.com</a></b></p>
+    </footer>
+
+</body>
+
+</html>
