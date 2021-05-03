@@ -1,18 +1,91 @@
-/* Remove the navbar's default margin-bottom and rounded borders */ 
-.navbar {
-    margin-bottom: 0;
-    border-radius: 0;
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    display: block;
+    margin: 8px;
 }
 
-/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-.row.content {height: 450px}
 
-/* Set gray background color and 100% height */
-.sidenav {
-    padding-top: 20px;
-    background-color: #f1f1f1;
-    height: 100%;
+* {
+    box-sizing: border-box;
 }
+
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* .navbar-inverse {
+    background-color: #222;
+    border-color: #080808;
+    height: 80px;
+} */
+
+
+
+
+
+
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #eee;
+}
+
+@media screen and (min-width: 768px){
+.jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}}
+
+.text-center {
+    text-align: center;
+}
+
+
+.header {
+    background: #3f3e3e;
+    clear: both;
+    margin: 0px;
+    height: 90px;
+  }
+  .header #logo {
+    float: left;
+    width: 27%;
+    padding: 8px;
+    margin-left: 20px;
+    /* margin: 5px; */
+  }
+  .header #navlist {
+    float: right;
+  background-color: #eeeeee;
+  /* height: 58px; */
+  border-radius: 10px;
+  }
+  .header #navlist li {
+    display: inline;
+    list-style-type: square;
+    padding: 20px;
+  }
+  .header #navlist li a:link {
+    /* line-height: 75px;
+    height: 75px; */
+    color: #fff;
+    padding: 10px;  
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
 
 /* Set black background color, white text and some padding */
 footer {
@@ -21,19 +94,14 @@ footer {
     padding: 15px;
 }
 
-/* On small screens, set height to 'auto' for sidenav and grid */
-@media screen and (max-width: 767px) {
-    .sidenav {
-    height: auto;
-    padding: 15px;
-    }
-    .row.content {height:auto;} 
-}
-
+a{
+    color: rgb(141, 140, 140);
+  }
 
 .main-section{
     margin: 17%;
     margin-top: 0;
     margin-bottom: 0;
     padding: 1%;
+    background-color: paleturquoise;
 }
